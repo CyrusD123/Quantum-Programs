@@ -20,4 +20,6 @@ Each qubit in the program begins with a default value of 0. When Qubit 0 is put 
 ![alt text](https://github.com/CyrusD123/Quantum-Programs/blob/master/Pics/Quantum%20Bloch.png?raw=true "Bloch Sphere Output")  
 
 In the picture above, each qubit is represented through a Bloch sphere (my repetend). In this case, Qubit 0 has collapsed to 0, so Qubit 1 and Qubit 2 didn't change from their default value of 0. This has created the value 000. If Qubit 0 had collapsed to 1, Qubit 1 and Qubit 2 would have switched from their default values of 0 to 1, creating a value of 111.
-Because there is a 50/50 chance that Qubit 0 will collapse to 0 or 1, the output of the 1,024 measurements is split about 50/50 as well.
+Because there is a 50/50 chance that Qubit 0 will collapse to 0 or 1, the output of the 1,024 measurements is split about 50/50 as well.  
+
+So it was no coincedince that the outputs turned out the way they did. This is all thanks to superposition and entanglement. In the next program, we'll take away entanglement to show just how important it is to quantum computing.
