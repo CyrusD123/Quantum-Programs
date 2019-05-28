@@ -47,7 +47,9 @@ You can see the output below:
 These percentages are very similar to those on the graph of QuantumRandom.py. When it comes to tasks like these, a traditional computer can do it faster and easier than a quantum computer that doesn't fully utilize the capabilites of qubits. Both superposition and entanglement together sets apart quantum computing from the rest.  
 
 # Noise and Errors - QuantumError.py
-QuantumError.py, written again using Qiskit, is the same as Quantum.py but runs the program twice, once on a simulated quantum computer (just like Quantum.py did) and again using one of IBM's owm 5-qubit quantum computers, the IBM Q 5. We will be able to see how "noise," the random flipping of qubits due to their interactions with the outside environment, hampers a quantum computation.
+QuantumError.py, written again using Qiskit, is the same as Quantum.py but runs the program twice, once on a simulated quantum computer (just like Quantum.py did) and again using one of IBM's owm 5-qubit quantum computers, the IBM Q 5. We will be able to see how "noise," the random flipping of qubits due to their interactions with the outside environment, hampers a quantum computation.  
+
+Note: If you want to run QuantumError.py at home, you'll need your own API Token. You can get one here: https://quantumexperience.ng.bluemix.net/qx/account/advanced
 
 ## The Output
 ![alt text](https://github.com/CyrusD123/Quantum-Programs/blob/master/Pics/Error%20Graph.png?raw=true "Bar Graph for QuantumError.py")  
