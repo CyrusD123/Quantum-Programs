@@ -7,7 +7,10 @@ You can check out the complete source code for each program in the repository ab
 Quantum.py is the basis for all of the other programs in this genre. It is written using Qiskit, a program that simulates a quantum computer on your own computer or connects to an IBM quantum computer over the Cloud.
 
 ## What it Does
-Quantum.py first creates three qubits to simulate on your computer. We can call these Qubit 0, Qubit 1, and Qubit 2. The program puts Qubit 0 through a Hadamard Gate, which puts the qubit in superposition. Qubit 1 and Qubit 2 are both but in Controlled-Not Gates with Qubit 0 as the "control qubit." This is the same as entanglement, where the value of qubit changes the value of another. In this case, the value of Qubit 0 will dictate the values of Qubit 1 and Qubit 2.
+Quantum.py first creates three qubits to simulate on your computer. We can call these Qubit 0, Qubit 1, and Qubit 2. The program puts Qubit 0 through a Hadamard Gate, which puts the qubit in superposition. Qubit 1 and Qubit 2 are both but in Controlled-Not Gates with Qubit 0 as the "control qubit." This is the same as entanglement, where the value of one qubit changes the value of another. In this case, the value of Qubit 0 will dictate the values of Qubit 1 and Qubit 2.
 The values of the qubits are measured 1,024 different times, and the measurements are recorded on a bar graph and Bloch sphere.
 
 ## The Output
+![alt text](https://github.com/CyrusD123/Quantum-Programs/blob/master/Pics/Quantum%20Graph.png?raw=true "Bar Graph with Counts")
+At the top of the graph is the number of times each output was recorded. A value of 111 was recorded 494 times, while a value of 000 was recorded 530 times. The graph shows that 51.8% of the values recorded were 000, and 48.2% of the values were 111.
+But why were only values of 000 and 111 recorded? After all, there are six other binary values that the qubits could have possibly ended up in, 001, 011, 010, 100, 110, or 101. This is where superposition and entanglement come in.
