@@ -34,7 +34,8 @@ Quantum.py used entanglement to ensure that the qubits could only end up as 000 
 
 Take a look at the Bloch spheres below:  
 
-![alt text](https://github.com/CyrusD123/Quantum-Programs/blob/master/Pics/Random%20Bloch.png?raw=true "Bloch Sphere Output for QuantumRandom.py")
+![alt text](https://github.com/CyrusD123/Quantum-Programs/blob/master/Pics/Random%20Bloch.png?raw=true "Bloch Sphere Output for QuantumRandom.py")  
+
 In this case, Qubit 0 collapsed to a value of 0 after superposition, Qubit 1 collapsed to 1, and Qubit 2 collapsed to 0. It was completely random what each qubit collapsed to. Scientists harness the power of entanglement to provide predictable data and avoid scenarios like the one  above.
 
 ## Relation to a Traditional Computer - ClassicalRandomNumber.js
