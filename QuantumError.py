@@ -9,7 +9,7 @@ from qiskit.tools.monitor import job_monitor
 from qiskit import IBMQ
 
 #Load IBM Token
-IBMQ.save_account('df786894ab16a5972d591bcc751acd71ae0a12c22131b0c89dfb7e65b3f503846ecc985e21e95dab005faf5abe837ad393bab096effa181a691a616e0e371168')
+IBMQ.save_account('get an api token here: https://quantumexperience.ng.bluemix.net/qx/account/advanced')
 IBMQ.load_accounts()
 
 #Create quantum and classical register
