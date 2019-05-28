@@ -34,15 +34,26 @@ Quantum.py used entanglement to ensure that the qubits could only end up as 000 
 
 Take a look at the Bloch spheres below:  
 
-![alt text](https://github.com/CyrusD123/Quantum-Programs/blob/master/Pics/Random%20Bloch.png?raw=true "Bloch Sphere Output for QuantumRandom.py")  
-
+![alt text](https://github.com/CyrusD123/Quantum-Programs/blob/master/Pics/Random%20Bloch.png?raw=true "Bloch Sphere Output for QuantumRandom.py")
 In this case, Qubit 0 collapsed to a value of 0 after superposition, Qubit 1 collapsed to 1, and Qubit 2 collapsed to 0. It was completely random what each qubit collapsed to. Scientists harness the power of entanglement to provide predictable data and avoid scenarios like the one  above.
 
-# Relation to a Traditional Computer - ClassicalRandomNumber.js
+## Relation to a Traditional Computer - ClassicalRandomNumber.js
 We can also see that without entanglement, the a quantum computer is no better than a traditional computer using classical bits. I created ClassicalRandomNumber.js, a random number generator that uses a traditional computer's classical bits rather than qubits.  
 
 You can see the output below:  
 
 ![alt text](https://github.com/CyrusD123/Quantum-Programs/blob/master/Pics/Classical%20Random.png?raw=true "Percentages Output for ClassicalRandomNumber.js")  
 
-These percentages are very similar to those on the graph of QuantumRandom.py. When it comes to tasks like these, a traditional computer can do it faster and easier than a quantum computer that doesn't fully utilize the capabilites of qubits. Both superposition and entanglement together sets apart quantum computing from the rest.
+These percentages are very similar to those on the graph of QuantumRandom.py. When it comes to tasks like these, a traditional computer can do it faster and easier than a quantum computer that doesn't fully utilize the capabilites of qubits. Both superposition and entanglement together sets apart quantum computing from the rest.  
+
+# Noise and Errors - QuantumError.py
+QuantumError.py, written again using Qiskit, is the same as Quantum.py but runs the program twice, once on a simulated quantum computer (just like Quantum.py did) and again using one of IBM's owm 5-qubit quantum computers, the IBM Q 5. We will be able to see how "noise," the random flipping of qubits due to their interactions with the outside environment, hampers a quantum computation.
+
+## The Output
+![alt text](https://github.com/CyrusD123/Quantum-Programs/blob/master/Pics/Error%20Graph.png?raw=true "Bar Graph for QuantumError.py")  
+
+The simulated quantum computer acts exactly the same way in Quantum.py, with only values of 000 and 111 measured, but the real-world IBM quantum computer has some erroneous values that aren't 000 or 111. But why is this? If each computer is running the same program, shouldn't the outputs be near-identical?  
+
+What prevents the IBM Q 5 from measuring only values of 000 or 111 is "noise." Noise is when outside environmental factors can cause qubits to randomly change values, potentially derailing calculations. For example, relatively warm temperatures may cause a qubit to change from a value of 0 to 1 when it wasn't supposed to. In QuantumError.py, noise caused some qubits to flip when they were measured, causing the values between 000 and 111 that weren't supposed to happen. There aren't many of these "incorrect" values, but there are just enough that they are noticeable. In an important calculation, noise could completely corrupt the data or output of a quantum computer.  
+
+Noise remains one of the largest obstacles to improving quantum computing in the future. It is important that scientists overcome it so that quantum computing can be reliably used in more complex ways.
