@@ -27,16 +27,20 @@ So it was no coincedince that the outputs turned out the way they did. This is a
 Also created with Qiskit, QuantumRandom.py is the same as Quantum.py, but instead of putting Qubits 1 and 2 in Controlled-Not Gates, every qubit is put in superposition (A Hadamard Gate). There is no entanglement at all in the program.
 
 ## The Output
-![alt text](https://github.com/CyrusD123/Quantum-Programs/blob/master/Pics/Random%20Graph.png?raw=true "Bar Graph with Counts for QuantumRandom.py")
+![alt text](https://github.com/CyrusD123/Quantum-Programs/blob/master/Pics/Random%20Graph.png?raw=true "Bar Graph with Counts for QuantumRandom.py")  
+
 We can see that all eight possible values of the qubits have been measured multiple times. We have just created a random number generator.
 Quantum.py used entanglement to ensure that the qubits could only end up as 000 or 111. However, once we use only superposition, this is not the case. In QuantumRandom.py, the qubits must collapse to a definite state when they are measured. In our program, there is a 50/50 chance that a single qubit will collapse to a 0 or a 1, so what value the qubit ends up in is completely random. This goes for every qubit in the program, as they are all in superposition.  
 
 Take a look at the Bloch spheres below:
-![alt text](https://github.com/CyrusD123/Quantum-Programs/blob/master/Pics/Random%20Bloch.png?raw=true "Bloch Sphere Output for QuantumRandom.py")
+![alt text](https://github.com/CyrusD123/Quantum-Programs/blob/master/Pics/Random%20Bloch.png?raw=true "Bloch Sphere Output for QuantumRandom.py")  
+
 In this case, Qubit 0 collapsed to a value of 0 after superposition, Qubit 1 collapsed to 1, and Qubit 2 collapsed to 0. It was completely random what each qubit collapsed to. Scientists harness the power of entanglement to provide predictable data and avoid scenarios like the one  above.
 
 # Relation to a Traditional Computer - ClassicalRandomNumber.js
 We can also see that without entanglement, the a quantum computer is no better than a traditional computer using classical bits. I created ClassicalRandomNumber.js, a random number generator that uses a traditional computer's classical bits rather than qubits.  
 
 You can see the output below:
-image
+![alt text](https://github.com/CyrusD123/Quantum-Programs/blob/master/Pics/Classical%20Random.png?raw=true "Percentages Output for ClassicalRandomNumber.js")  
+
+These percentages are very similar to those on the graph of QuantumRandom.py. When it comes to tasks like these, a traditional computer can do it faster and easier than a quantum computer that doesn't fully utilize the capabilites of qubits. Both superposition and entanglement together sets apart quantum computing from the rest.
