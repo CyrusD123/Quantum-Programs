@@ -48,3 +48,5 @@ plot_histogram(counts)
 
 #Do this later
 plot_bloch_multivector(state)
+
+#git push -u origin master
