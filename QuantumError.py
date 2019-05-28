@@ -23,7 +23,7 @@ meas.barrier(q)
 meas.measure(q,c)
 #Backend that does computations
 backend_sim = BasicAer.get_backend('qasm_simulator')
-backend = IBMQ.get_backend('ibmqx4')
+backend = IBMQ.get_backend('ibmqx4', hub=None)
 
 #Specify shots and number of credits spent on execution
 shots = 1024
